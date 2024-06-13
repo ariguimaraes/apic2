@@ -1,0 +1,37 @@
+### Testar criação de usuário
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.oe@example.com"
+}
+
+### Testar obtenção de usuários
+GET http://localhost:3000/users
+
+### Testar criação de post
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "title": "Meu Primeiro Post",
+  "content": "Este é o conteúdo do meu primeiro post.",
+  "authorId": 1
+}
+
+### Testar obtenção de posts
+GET http://localhost:3000/posts
+
+### Testar criação de comentário
+POST http://localhost:3000/comments
+Content-Type: application/json
+
+{
+  "content": "Este é um comentário.",
+  "postId": 1,
+  "authorId": 1
+}
+
+### Testar obtenção de comentários
+GET http://localhost:3000/comments
